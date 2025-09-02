@@ -284,7 +284,7 @@ export async function buyToken(
         );
       }
     } catch (error: any) {
-      if (error.name === "TokenAccountNotFoundError") {
+      if (error.name === "TokenAccountNotFoundError" || error.name === "TokenInvalidAccountOwnerError") {
         const solBalance = await connection.getBalance(payer.publicKey);
         const requiredSolForTx = maxAmountIn.add(new BN(5000));
 
@@ -319,7 +319,7 @@ export async function buyToken(
       } else {
         return {
           success: false,
-          message: `Error checking WSOL account: ${(error as any).message}`,
+          message: `Error checking WSOL account: [${error.name}] ${(error as any).message}`,
         };
       }
     }
