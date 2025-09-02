@@ -26,8 +26,13 @@ export const CONFIGS = {
     programId: "FLipzZfErPUtDQPj9YrC6wp4nRRiVxRkFm3jdFmiPHJV",
     lookupTableAccount: "EebRqpLtUgjX17pJJNNbd6ngtYa34VGa51oYsibwJRXy",
     systemManagerAccount: "DJ3jvpv6k7uhq8h9oVHZck6oY4dQqY1GHaLvCLjSqxaD",
-    cpSwapProgram: "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW",
-    cpSwapConfigAddress: "9zSzfkYy6awexsHvmggeH36pfVUdDGyCcwmjT3AQPBj6",
+    // cpSwapProgram: "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW",
+    // cpSwapConfigAddress: "9zSzfkYy6awexsHvmggeH36pfVUdDGyCcwmjT3AQPBj6",
+
+    //raydium official devnet
+    cpSwapProgram: "DRaycpLY18LhpbydsBWbVJtxpNv9oXPgjRSfpF2bWpYb",
+    cpSwapConfigAddress: "5MxLgy9oPdTC3YgkiePHqr3EoCRD9uLVYRQS2ANAs7wy",
+
     createPoolFeeReceive: "G11FKBRaAkHAKuLCgLM6K6NUc9rTjPAznRCjZifrTQe2",
     allowOwnerOffCurveForProtocolFeeAccount: false,
     irysGatewayUrl: "https://gateway.irys.xyz",
