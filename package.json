@@ -1,6 +1,6 @@
 {
-  "name": "@flipflop-sdk/node",
-  "version": "1.3.18",
+  "name": "@ennea8/flipflop-sdk-node",
+  "version": "1.3.20",
   "description": "FlipFlop Node.js SDK for programmatic token operations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,7 +41,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flipflop-fun/sdk.git"
+    "url": "https://github.com/ennea8/flipflop-sdk-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.31.1",
