@@ -23,6 +23,7 @@ export const POOL_SEEDS = "pool";
 export const LAUNCH_RULE_SEEDS = "launch_rule";
 export const AUTH_SEED = "vault_and_lp_mint_auth_seed";
 export const URC_THROTTLE_SEEDS = "urc_throttle";
+export const GRADUATION_CONTROL_SEEDS = "graduation_control";
 
 export const AMM_CONFIG_SEED = Buffer.from(
   anchor.utils.bytes.utf8.encode("amm_config")

@@ -41,6 +41,7 @@ import {
 } from "@solana/spl-token";
 import {
   CODE_ACCOUNT_SEED,
+  GRADUATION_CONTROL_SEEDS,
   METADATA_SEED,
   ORACLE_SEED,
   POOL_AUTH_SEED,
@@ -573,6 +574,11 @@ export const mintBy = async (
     token1Program
   );
 
+  const [graduationControlAccountPda] = PublicKey.findProgramAddressSync(
+    [Buffer.from(GRADUATION_CONTROL_SEEDS), mintAccount.toBuffer()],
+    programId
+  );
+
   const context = {
     mint: mintAccount,
     destination: destinationAta,
@@ -591,6 +597,7 @@ export const mintBy = async (
     protocolFeeAccount,
     protocolWsolVault: protocolWsolVaultAta,
     poolState: poolAddress,
+    graduationControlAccount: graduationControlAccountPda,
     ammConfig: cpSwapConfigAddress,
     cpSwapProgram: cpSwapProgram,
     token0Mint: token0Mint,

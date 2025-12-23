@@ -8,7 +8,7 @@ export type FairMintToken = {
   "address": "FLipzZfErPUtDQPj9YrC6wp4nRRiVxRkFm3jdFmiPHJV",
   "metadata": {
     "name": "fairMintToken",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "spec": "0.1.0",
     "description": "Created with Anchor"
   },
@@ -1056,6 +1056,41 @@ export type FairMintToken = {
           "writable": true
         },
         {
+          "name": "graduationControlAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  100,
+                  117,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
+        },
+        {
           "name": "poolState",
           "writable": true,
           "pda": {
@@ -1087,47 +1122,47 @@ export type FairMintToken = {
               "value": [
                 169,
                 42,
-                49,
-                26,
-                136,
-                152,
-                134,
-                77,
+                90,
+                139,
+                79,
+                41,
+                89,
+                82,
+                132,
+                37,
+                80,
+                170,
+                147,
+                253,
+                91,
+                149,
+                181,
+                172,
+                230,
+                168,
+                235,
+                146,
+                12,
+                147,
+                148,
+                46,
+                67,
+                105,
+                12,
                 32,
-                99,
-                200,
-                252,
-                203,
-                83,
-                110,
-                30,
-                138,
-                48,
-                77,
-                141,
-                83,
-                152,
-                76,
-                10,
-                78,
-                179,
-                193,
-                68,
-                7,
-                214,
-                116,
-                231
+                236,
+                115
               ]
             }
           }
         },
         {
           "name": "ammConfig",
-          "address": "9zSzfkYy6awexsHvmggeH36pfVUdDGyCcwmjT3AQPBj6"
+          "address": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2"
         },
         {
           "name": "cpSwapProgram",
-          "address": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+          "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
         },
         {
           "name": "token0Mint"
@@ -1251,7 +1286,7 @@ export type FairMintToken = {
         {
           "name": "ownerLpToken",
           "docs": [
-            "Owner lp tokan account - config account"
+            "Owner lp token account - config account"
           ],
           "writable": true
         },
@@ -1301,7 +1336,7 @@ export type FairMintToken = {
       "accounts": [
         {
           "name": "cpSwapProgram",
-          "address": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+          "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
         },
         {
           "name": "owner",
@@ -1416,36 +1451,36 @@ export type FairMintToken = {
               "value": [
                 169,
                 42,
-                49,
-                26,
-                136,
-                152,
-                134,
-                77,
+                90,
+                139,
+                79,
+                41,
+                89,
+                82,
+                132,
+                37,
+                80,
+                170,
+                147,
+                253,
+                91,
+                149,
+                181,
+                172,
+                230,
+                168,
+                235,
+                146,
+                12,
+                147,
+                148,
+                46,
+                67,
+                105,
+                12,
                 32,
-                99,
-                200,
-                252,
-                203,
-                83,
-                110,
-                30,
-                138,
-                48,
-                77,
-                141,
-                83,
-                152,
-                76,
-                10,
-                78,
-                179,
-                193,
-                68,
-                7,
-                214,
-                116,
-                231
+                236,
+                115
               ]
             }
           }
@@ -1460,7 +1495,7 @@ export type FairMintToken = {
         {
           "name": "ownerLpToken",
           "docs": [
-            "Owner lp tokan account"
+            "Owner lp token account"
           ],
           "writable": true
         },
@@ -1521,6 +1556,41 @@ export type FairMintToken = {
         {
           "name": "lpMint",
           "writable": true
+        },
+        {
+          "name": "graduationControlAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  100,
+                  117,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
         }
       ],
       "args": [
@@ -1564,7 +1634,7 @@ export type FairMintToken = {
       "accounts": [
         {
           "name": "cpSwapProgram",
-          "address": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+          "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
         },
         {
           "name": "payer",
@@ -1679,36 +1749,36 @@ export type FairMintToken = {
               "value": [
                 169,
                 42,
-                49,
-                26,
-                136,
-                152,
-                134,
-                77,
+                90,
+                139,
+                79,
+                41,
+                89,
+                82,
+                132,
+                37,
+                80,
+                170,
+                147,
+                253,
+                91,
+                149,
+                181,
+                172,
+                230,
+                168,
+                235,
+                146,
+                12,
+                147,
+                148,
+                46,
+                67,
+                105,
+                12,
                 32,
-                99,
-                200,
-                252,
-                203,
-                83,
-                110,
-                30,
-                138,
-                48,
-                77,
-                141,
-                83,
-                152,
-                76,
-                10,
-                78,
-                179,
-                193,
-                68,
-                7,
-                214,
-                116,
-                231
+                236,
+                115
               ]
             }
           }
@@ -1784,6 +1854,41 @@ export type FairMintToken = {
             "The program account for the most recent oracle observation"
           ],
           "writable": true
+        },
+        {
+          "name": "graduationControlAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  100,
+                  117,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
         }
       ],
       "args": [
@@ -1823,7 +1928,7 @@ export type FairMintToken = {
       "accounts": [
         {
           "name": "cpSwapProgram",
-          "address": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+          "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
         },
         {
           "name": "payer",
@@ -1938,36 +2043,36 @@ export type FairMintToken = {
               "value": [
                 169,
                 42,
-                49,
-                26,
-                136,
-                152,
-                134,
-                77,
+                90,
+                139,
+                79,
+                41,
+                89,
+                82,
+                132,
+                37,
+                80,
+                170,
+                147,
+                253,
+                91,
+                149,
+                181,
+                172,
+                230,
+                168,
+                235,
+                146,
+                12,
+                147,
+                148,
+                46,
+                67,
+                105,
+                12,
                 32,
-                99,
-                200,
-                252,
-                203,
-                83,
-                110,
-                30,
-                138,
-                48,
-                77,
-                141,
-                83,
-                152,
-                76,
-                10,
-                78,
-                179,
-                193,
-                68,
-                7,
-                214,
-                116,
-                231
+                236,
+                115
               ]
             }
           }
@@ -2043,6 +2148,41 @@ export type FairMintToken = {
             "The program account for the most recent oracle observation"
           ],
           "writable": true
+        },
+        {
+          "name": "graduationControlAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  100,
+                  117,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
         }
       ],
       "args": [
@@ -2082,7 +2222,7 @@ export type FairMintToken = {
       "accounts": [
         {
           "name": "cpSwapProgram",
-          "address": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+          "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
         },
         {
           "name": "owner",
@@ -2197,36 +2337,36 @@ export type FairMintToken = {
               "value": [
                 169,
                 42,
-                49,
-                26,
-                136,
-                152,
-                134,
-                77,
+                90,
+                139,
+                79,
+                41,
+                89,
+                82,
+                132,
+                37,
+                80,
+                170,
+                147,
+                253,
+                91,
+                149,
+                181,
+                172,
+                230,
+                168,
+                235,
+                146,
+                12,
+                147,
+                148,
+                46,
+                67,
+                105,
+                12,
                 32,
-                99,
-                200,
-                252,
-                203,
-                83,
-                110,
-                30,
-                138,
-                48,
-                77,
-                141,
-                83,
-                152,
-                76,
-                10,
-                78,
-                179,
-                193,
-                68,
-                7,
-                214,
-                116,
-                231
+                236,
+                115
               ]
             }
           }
@@ -2302,6 +2442,41 @@ export type FairMintToken = {
         {
           "name": "lpMint",
           "writable": true
+        },
+        {
+          "name": "graduationControlAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  100,
+                  117,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  111,
+                  108
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ]
+          }
         },
         {
           "name": "memoProgram",
@@ -3339,6 +3514,19 @@ export type FairMintToken = {
       ]
     },
     {
+      "name": "graduationControlData",
+      "discriminator": [
+        171,
+        21,
+        240,
+        108,
+        120,
+        137,
+        159,
+        145
+      ]
+    },
+    {
       "name": "launchRuleData",
       "discriminator": [
         219,
@@ -3375,19 +3563,6 @@ export type FairMintToken = {
         195,
         222,
         70
-      ]
-    },
-    {
-      "name": "referrerThrottleData",
-      "discriminator": [
-        156,
-        48,
-        238,
-        20,
-        112,
-        82,
-        26,
-        5
       ]
     },
     {
@@ -3771,58 +3946,58 @@ export type FairMintToken = {
     },
     {
       "code": 6049,
-      "name": "payerMustSign",
-      "msg": "Payer must sign"
-    },
-    {
-      "code": 6050,
       "name": "invalidPayerAccount",
       "msg": "Invalid payer account"
     },
     {
-      "code": 6051,
+      "code": 6050,
       "name": "invalidCodeHash",
       "msg": "Invalid code hash"
     },
     {
-      "code": 6052,
+      "code": 6051,
       "name": "invalidResetInterval",
       "msg": "Invalid reset interval"
     },
     {
-      "code": 6053,
+      "code": 6052,
       "name": "tokenAlreadyInitialized",
       "msg": "Token already initialized"
     },
     {
-      "code": 6054,
+      "code": 6053,
       "name": "invalidTokenName",
       "msg": "Invalid token name"
     },
     {
-      "code": 6055,
+      "code": 6054,
       "name": "invalidTokenSymbol",
       "msg": "Invalid token symbol"
     },
     {
-      "code": 6056,
+      "code": 6055,
       "name": "invalidTokenUri",
       "msg": "Invalid token uri"
     },
     {
-      "code": 6057,
+      "code": 6056,
       "name": "metadataAlreadyInitialized",
       "msg": "Metadata already initialized"
     },
     {
-      "code": 6058,
+      "code": 6057,
       "name": "invalidProtocolFeeRate",
       "msg": "Invalid protocol fee rate, max 50000 which is 50%"
     },
     {
-      "code": 6059,
+      "code": 6058,
       "name": "invalidRefundFeeRate",
       "msg": "Invalid refund fee rate, max 50000 which is 50%"
+    },
+    {
+      "code": 6059,
+      "name": "invalidGraduateFeeRate",
+      "msg": "Invalid graduate fee rate, max 50 which is 50%"
     },
     {
       "code": 6060,
@@ -3941,13 +4116,13 @@ export type FairMintToken = {
     },
     {
       "code": 6083,
-      "name": "userBalanceNotEqualToRefund",
-      "msg": "User balance not equal to refund"
+      "name": "userBalanceNotEnoughToRefund",
+      "msg": "User balance not enough to refund"
     },
     {
       "code": 6084,
-      "name": "vaultBalanceNotEqualToRefund",
-      "msg": "Vault balance not equal to refund"
+      "name": "vaultBalanceNotEnoughToRefund",
+      "msg": "Vault balance not enough to refund"
     },
     {
       "code": 6085,
@@ -4158,6 +4333,26 @@ export type FairMintToken = {
       "code": 6126,
       "name": "urcActivationLimitExceeded",
       "msg": "URC activation exceeds limit in current window"
+    },
+    {
+      "code": 6127,
+      "name": "invalidAdminAccount",
+      "msg": "Invalid admin account"
+    },
+    {
+      "code": 6128,
+      "name": "graduationControlNotInitialized",
+      "msg": "Graduation control account not initialized"
+    },
+    {
+      "code": 6129,
+      "name": "wsolBudgetExceeded",
+      "msg": "WSOL market management budget exceeded in current window"
+    },
+    {
+      "code": 6130,
+      "name": "wsolBudgetInvariantFailed",
+      "msg": "WSOL budget invariant failed"
     }
   ],
   "types": [
@@ -4275,6 +4470,30 @@ export type FairMintToken = {
           {
             "name": "referralAccount",
             "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "graduationControlData",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "graduateTimestamp",
+            "type": "u64"
+          },
+          {
+            "name": "graduateWsolBase",
+            "type": "u64"
+          },
+          {
+            "name": "usedWsolBudget",
+            "type": "u64"
+          },
+          {
+            "name": "postGraduationWsolAccumulated",
+            "type": "u64"
           }
         ]
       }
@@ -4745,22 +4964,6 @@ export type FairMintToken = {
                 32
               ]
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "referrerThrottleData",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "windowStart",
-            "type": "u64"
-          },
-          {
-            "name": "activationCount",
-            "type": "u32"
           }
         ]
       }
